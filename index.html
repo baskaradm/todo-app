@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Marko Todo App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="images/logo.png" alt="" />
+        <h1>My Todo List</h1>
+      </header>
+      <form id="task-form">
+        <div class="form-control">
+          <input
+            type="text"
+            class="form-input"
+            id="task-input"
+            name="task"
+            placeholder="Enter a task"
+          />
+        </div>
+        <div class="form-control">
+          <button type="submit" class="btn">
+            <i class="fas fa-plus"></i> Add Task
+          </button>
+        </div>
+      </form>
+
+      <div class="filter">
+        <input
+          type="text"
+          class="form-input-filter"
+          id="filter"
+          placeholder="Filter tasks"
+        />
+      </div>
+
+      <ul id="task-list" class="tasks">
+        <li>
+          Finish Js Course
+          <button class="remove-task btn-link text-red">
+            <i class="fas fa-xmark"></i>
+          </button>
+        </li>
+        <li>
+          Go to Grocery
+          <button class="remove-task btn-link text-red">
+            <i class="fas fa-xmark"></i>
+          </button>
+        </li>
+        <li>
+          Feed the cats
+          <button class="remove-task btn-link text-red">
+            <i class="fas fa-xmark"></i>
+          </button>
+        </li>
+        <li>
+          Mow the grass
+          <button class="remove-task btn-link text-red">
+            <i class="fas fa-xmark"></i>
+          </button>
+        </li>
+      </ul>
+      <button id="clear" class="btn-clear">Clear All</button>
+    </div>
+  </body>
+</html>
